@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Player</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1 class="header">YouTube Player</h1>
+    <form class="form" onsubmit="event.preventDefault(); updateVideo();">
+        <label for="youtube-url" class="inputlabel">Enter YouTube URL </label>
+        <input type="text" id="youtube-url" name="youtube-url" required>
+        <button type="submit" class="btn">Play Video</button>
+    </form>
+    <div class="bg-form"></div>
+
+    <button onclick="addToPlaylist()">Add to Playlist</button>
+    <button onclick="playNextVideo()">Play Next Video</button>
+    <div class="video-container">
+        <iframe id="youtube-player" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="playlist">
+        <h2>Playlist </h2>
+        <div id="playlist-container"></div>
+    </div>
+
+    <div style="margin-top: -9.4cm;">
+        <label for="search-query">Enter search query:</label>
+        <input type="text" id="search-query" name="search-query" required>
+        <button onclick="searchYouTube()">Search</button>
+        <div id="results-container" class="results-container">
+        </div>
+        <button onclick="clearResults()">CLEAR</button>
+    </div>    
+</body>
+</html>

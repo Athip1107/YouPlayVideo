@@ -1,0 +1,87 @@
+body {
+    background-color: aqua;
+}
+
+.video-container {
+    margin-top: -9px;
+}
+
+.inputlabel {
+    font-size: 19px;
+    padding-right: 6px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.bg-form {
+    background: black;
+    width: 446px;
+    height: 35px;
+    margin-left: 38.5vw;
+    margin-top: -28px;
+    border-radius: 11px;
+}
+
+.form {
+    margin-top: 9px;
+    margin-left: 38vw;
+    padding-left: 15px;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 24px;
+    padding: 10px 0px 10px 0px;
+    width: 16vw;
+    margin: auto;
+    border-radius: 10px;
+}
+iframe {
+    width: 25cm;
+    height: 14cm;
+    margin-left: 12.9cm;
+}
+.btn {
+    border-radius: 7px;
+    border: none;
+    width: 2.2cm;
+    height: 22px;
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+.clip {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1cm;
+    margin-left: 17px;
+}
+
+.search {
+    display: inline-flex;
+}
+
+.text-se {
+    font-size: 10px;
+}
+.clip img {
+    width: 93px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 21px;
+}
+
+.playlist {
+    margin-left: 38.2cm;
+    margin-top: -555px;
+    height: 10cm;
+}
+
+.results-container {
+    display: flex;
+    margin-top: 12.8cm;
+    justify-content: space-around;
+    margin-bottom: 12px;
+}
