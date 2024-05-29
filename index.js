@@ -98,7 +98,7 @@ function extractVideoId(url) {
 function copyLink(videoId) {
     const link = `https://www.youtube.com/watch?v=${videoId}`;
     navigator.clipboard.writeText(link)
-        .then(() => alert("Link copied to clipboard: " + link))
+        .then(() => alert("Link copied to clipboard:"))
         .catch(error => console.error("Unable to copy link: ", error));
 }
 
