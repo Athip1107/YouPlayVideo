@@ -15,7 +15,7 @@ function updateVideo() {
 async function searchYouTube() {
     const query = document.getElementById("search-query").value;
     const apiKey = "AIzaSyDM6shPGutLxg1C69BiIzgRooP3bydwKYg"; // แทน YOUR_API_KEY ด้วย API Key ของคุณ
-    const maxResults = 7; // จำนวนผลลัพธ์สูงสุดที่ต้องการแสดง
+    const maxResults = 20; // จำนวนผลลัพธ์สูงสุดที่ต้องการแสดง
 
     const response = await fetch(`https://www.googleapis.com/youtube/v3/search?q=${query}&key=${apiKey}&part=snippet&maxResults=${maxResults}`);
     const data = await response.json();
@@ -47,7 +47,6 @@ function addToPlaylist() {
     if (videoId) {
         playlist.push(videoId);
         displayPlaylist(); // เรียกใช้ฟังก์ชันเพื่อแสดงรายการเพลย์ลิสต์
-        alert("Video added to playlist!");
     } else {
         alert("Please enter a valid YouTube URL.");
     }
@@ -82,6 +81,12 @@ function displayPlaylist() {
         clipContainer.appendChild(clipName);
         playlistContainer.appendChild(clipContainer);
     });
+
+}
+
+function clearPlaylist() {
+    playlist = [];
+    displayPlaylist(); // อัปเดตการแสดงผลหลังจากเคลียร์เพลย์ลิสต์
 }
 
 function extractVideoId(url) {

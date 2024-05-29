@@ -1,5 +1,27 @@
 body {
-    background-color: aqua;
+    background-color: rgb(190, 156, 156);
+    overflow-x: visible;
+    overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 .video-container {
@@ -39,9 +61,11 @@ body {
     border-radius: 10px;
 }
 iframe {
-    width: 25cm;
+    width: 24.8cm;
     height: 14cm;
-    margin-left: 12.9cm;
+    margin-left: 0.2cm;
+    border-radius: 19px;
+    margin-top: 22px;
 }
 .btn {
     border-radius: 7px;
@@ -50,6 +74,29 @@ iframe {
     height: 22px;
     font-size: 15px;
     font-family: system-ui;
+}
+
+.btn1 {
+    border-radius: 7px;
+    border: black;
+    border-style: groove;
+    font-family: monospace;
+    font-size: 15px;
+    height: 27px;
+    width: 64px;
+    margin-left: 6px;
+}
+
+.btn2 {
+    border-radius: 7px;
+    font-size: initial;
+    border: none;
+    background: white;
+}
+
+.btn3 {
+    border-radius: 7px;
+    border: none;
 }
 
 .clip {
@@ -74,14 +121,45 @@ iframe {
 }
 
 .playlist {
-    margin-left: 38.2cm;
+    margin-left: 25.5cm;
     margin-top: -555px;
-    height: 10cm;
+    height: 14cm;
+    width: 13.8cm;
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    background: white;
 }
 
 .results-container {
-    display: flex;
-    margin-top: 12.8cm;
+    padding-left: 11px;
+    margin-top: 0.3cm;
     justify-content: space-around;
     margin-bottom: 12px;
+}
+
+.txtinput {
+    font-family: emoji;
+    width: 125px;
+    height: 19px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 8px;
+}
+
+.searchmenu {
+    margin-top: -16.9cm;
+    width: 10cm;
+    height: 67.25cm;
+    margin-left: 40.1cm;
+    border-color: red;
+    border-radius: 10px;
+    border-style: solid;
+    padding-top: 4px;
+}
+
+.clearPlaylist {
+    border-radius: 7px;
+    border: none;
 }
