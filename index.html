@@ -3,39 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Y P V : YouPlayVideo</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-    <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+    <title>YouPlayVideo</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <h1 class="header">YPV : YouPlayVideo</h1>
-    <form class="form" onsubmit="event.preventDefault(); updateVideo();">
-        <label for="youtube-url" class="inputlabel">Enter URL</label>
-        <input type="text" id="youtube-url" name="youtube-url" required>
-        <button type="submit" class="btn">Play Video</button>
-    </form>
-    <div class="bg-form"></div>
+    <div class="contianer">
+        <form class="form" onsubmit="event.preventDefault(); updateVideo();">
+            <label for="youtube-url" class="inputlabel">Enter URL</label>
+            <input type="text" id="youtube-url" name="youtube-url" required>
+            <button type="submit" class="btn">Play Video</button>
+        </form>
 
-    <button onclick="addToPlaylist()" class="btn3">Add to Playlist</button>
-    <button onclick="playNextVideo()" class="btn3">Play Next Video</button>
-    <button onclick="clearPlaylist()" class="clearPlaylist">Clear Playlist</button>
-    <button class="btn3" onclick="clearResults()">Clear Search</button>
-    <div class="video-container">
-        <iframe id="youtube-player" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="playlist">
-        <h2 style="margin-left: 201px;margin-top: 5px;font-size: 26px;font-family: monospace;">Playlist </h2>
-        <div id="playlist-container"></div>
-    </div>
-
-    <div class="searchmenu">
-        <label for="search-query" style="margin-left: 29px;">Enter search query:</label>
-        <input class="txtinput" type="text" id="search-query" name="search-query" required>
-        <button class="btn2" onclick="searchYouTube()">Search</button>
-        <div id="results-container" class="results-container">
+        <div class="video-container">
+            <iframe id="youtube-player" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    </div>    
+
+        <div class="btn1">
+            <button onclick="addToPlaylist()" class="btn3">Add to Playlist</button>
+            <button onclick="playNextVideo()" class="btn3">Play Next Video</button>
+            <button onclick="clearPlaylist()" class="btn3">Clear Playlist</button>
+            <button class="btn3" onclick="clearResults()">Clear Search</button>
+        </div>
+
+        <div class="search-menu"> 
+            <label for="search-query" style="margin-left: 20px;">Enter search query:</label>
+            <input class="txtinput" type="text" id="search-query" name="search-query" required>
+            <button class="btn2" onclick="searchYouTube()">Search</button>
+        </div>
+
+        <div class="Listmenu">
+            <div id="results-container" class="results-container"></div>
+        </div> 
+
+        <div class="playlist">
+            <h2 style="margin-left: 160px;margin-top: 5px;font-size: 26px;font-family: monospace;">Playlist </h2>
+            <div id="playlist-container"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>

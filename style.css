@@ -1,0 +1,129 @@
+* {
+    font-family: "Prompt", sans-serif;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+.contianer {
+    position: relative;
+    background-color: black;
+    height: auto;
+}
+
+.form {
+    position: absolute;
+    left: 21cm;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+.search-menu {
+    position: relative;
+    left: 9px;
+    top: -22.5cm;
+    margin: 10px 0px 0px 0px;
+    background: #ffffff;
+    width: 21%;
+    padding: 5px;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.video-container {
+    position: relative;
+    top: 55px;
+    left: 26%;
+    width: 10cm;
+}
+
+#youtube-player {
+    height: 20.91cm;
+    width: 37cm;
+    border-radius: 10px;
+}
+
+.Listmenu {
+    position: relative;
+    top: -22.1cm;
+    left: 10px;
+    height: 14.8cm;
+    width: 448px;
+    border: rebeccapurple;
+    border-style: solid;
+    overflow: scroll;
+    background: white;
+}
+
+.btn1 {
+    position: relative;
+    left: 13cm;
+    top: 2cm;
+    display: flex;
+    border-radius: 7px;
+    border: none;
+    width: 10.2cm;
+    height: 55px;
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+.btn3 {
+    border-radius: 7px;
+    border: none;
+    height: 65px;
+    width: 65px;
+    margin: 4px;
+}
+
+.playlist {
+    position: relative;
+    top: -22.2cm;
+    left: 10px;
+    height: 12cm;
+    width: 11.8cm;
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+.clip {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1cm;
+    margin-left: 17px;
+}
+
+.clip img {
+    width: 93px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 21px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
